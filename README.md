@@ -1,4 +1,4 @@
-# sleeping_music
+# music player
 
 A collection of relaxing sounds.
 
