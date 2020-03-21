@@ -6,7 +6,6 @@ void main() => runApp(MyApp());
 
 var blueColor = Color(0xFF090e42);
 var lightBlueColor = Color(0xFF00CCFF);
-var pinkColor = Color(0xFFff6b80);
 
 var note = '🎵';
 
@@ -35,7 +34,7 @@ class MyHomePage extends StatelessWidget {
         children: <Widget>[
           SizedBox(height: 32.0,),
 
-          /// Contains the search bar
+          // Contains the search bar
           MyTextField(),
 
           SizedBox(height: 10.0,),
@@ -51,7 +50,7 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
 
-          /// Multiple rows, which contain the content of the collections
+          // Multiple rows, which contain the content of the collections
           Row(
             children: <Widget>[
               Padding(

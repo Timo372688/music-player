@@ -3,7 +3,6 @@ import 'playing.dart';
 
 var blueColor = Color(0xFF090e42);
 var lightBlueColor = Color(0xFF00CCFF);
-var pinkColor = Color(0xFFff6b80);
 
 class CollectionScreen extends StatelessWidget {
   final title;
