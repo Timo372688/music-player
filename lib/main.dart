@@ -7,8 +7,6 @@ void main() => runApp(MyApp());
 var blueColor = Color(0xFF090e42);
 var lightBlueColor = Color(0xFF00CCFF);
 
-var note = '🎵';
-
 var flume = 'https://i.scdn.co/image/8d84f7b313ca9bafcefcf37d4e59a8265c7d3fff';
 var martinGarrix = 'https://c1.staticflickr.com/2/1841/44200429922_d0cbbf22ba_b.jpg';
 var rosieLowe = 'https://i.scdn.co/image/db8382f6c33134111a26d4bf5a482a1caa5f151c';
@@ -93,12 +91,12 @@ class MyHomePage extends StatelessWidget {
           ),
 
           // Some recommended songs
-          MySong('jazz playlist one', 'assets/music.png', '1:26:30'),
-          MySong('tropical rain forest', 'assets/music.png', '3:43:12'),
-          MySong('jazz playlist one', 'assets/music.png', '1:26:30'),
-          MySong('tropical rain forest', 'assets/music.png', '3:43:12'),
-          MySong('jazz playlist one', 'assets/music.png', '1:26:30'),
-          MySong('tropical rain forest', 'assets/music.png', '3:43:12'),
+          MySong('Ori and the Whisps', 'assets/songs/movies/ori-small.jpg', 'assets/songs/movies/ori.jpg', '51:13'),
+          MySong('tropical rain forest', 'assets/music.png', 'assets/fancy-playing.jpg', '3:43:12'),
+          MySong('jazz playlist one', 'assets/music.png', 'assets/fancy-playing.jpg', '1:26:30'),
+          MySong('tropical rain forest', 'assets/music.png', 'assets/fancy-playing.jpg', '3:43:12'),
+          MySong('jazz playlist one', 'assets/music.png', 'assets/fancy-playing.jpg', '1:26:30'),
+          MySong('tropical rain forest', 'assets/music.png', 'assets/fancy-playing.jpg', '3:43:12'),
         ]
       )
     );
@@ -147,10 +145,11 @@ class MyCollection extends StatelessWidget {
 
 class MySong extends StatelessWidget {
   final title;
-  final image;
+  final imageSmall;
+  final imageLarge;
   final duration;
 
-  MySong(this.title, this.image, this.duration);
+  MySong(this.title, this.imageSmall, this.imageLarge, this.duration);
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -158,7 +157,7 @@ class MySong extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => PlayingScreen(title, 'assets/fancy-playing.jpg', duration)
+            builder: (context) => PlayingScreen(title, imageLarge, duration)
           )
         );
       },
@@ -171,7 +170,7 @@ class MySong extends StatelessWidget {
               width: 50.0,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10.0),
-                child: Image.asset(image),
+                child: Image.asset(imageSmall),
               ),
             ),
             Padding(
