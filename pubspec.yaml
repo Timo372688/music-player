@@ -48,6 +48,14 @@ flutter:
     - assets/
     - assets/songs/movies/ori.jpg
     - assets/songs/movies/ori-small.jpg
+    - assets/songs/jazz/funky-jazz-small.jpg
+    - assets/songs/jazz/funky-jazz.jpg
+    - assets/songs/jazz/hometown-small.jpg
+    - assets/songs/jazz/hometown.jpg
+    - assets/songs/jazz/new-york-jazz-small.jpg
+    - assets/songs/jazz/new-york-jazz.jpg
+    - assets/songs/jazz/smooth-jazz-small.jpg
+    - assets/songs/jazz/smooth-jazz.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
