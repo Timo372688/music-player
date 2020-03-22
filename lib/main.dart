@@ -92,10 +92,9 @@ class MyHomePage extends StatelessWidget {
 
           // Some recommended songs
           MySong('Ori and the Whisps', 'assets/songs/movies/ori-small.jpg', 'assets/songs/movies/ori.jpg', '51:13'),
-          MySong('tropical rain forest', 'assets/music.png', 'assets/fancy-playing.jpg', '3:43:12'),
-          MySong('jazz playlist one', 'assets/music.png', 'assets/fancy-playing.jpg', '1:26:30'),
-          MySong('tropical rain forest', 'assets/music.png', 'assets/fancy-playing.jpg', '3:43:12'),
-          MySong('jazz playlist one', 'assets/music.png', 'assets/fancy-playing.jpg', '1:26:30'),
+          MySong('New York Jazz', 'assets/songs/jazz/new-york-jazz-small.jpg', 'assets/songs/jazz/new-york-jazz.jpg', '49:50'),
+          MySong('Funky Jazz', 'assets/songs/jazz/funky-jazz-small.jpg', 'assets/songs/jazz/funky-jazz.jpg', '2:28'),
+          MySong('Home Town', 'assets/songs/jazz/hometown-small.jpg', 'assets/songs/jazz/hometown.jpg', '5:26'),
           MySong('tropical rain forest', 'assets/music.png', 'assets/fancy-playing.jpg', '3:43:12'),
         ]
       )
