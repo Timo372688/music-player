@@ -95,7 +95,7 @@ class MyHomePage extends StatelessWidget {
           MySong('New York Jazz', 'assets/songs/jazz/new-york-jazz-small.jpg', 'assets/songs/jazz/new-york-jazz.jpg', '49:50'),
           MySong('Funky Jazz', 'assets/songs/jazz/funky-jazz-small.jpg', 'assets/songs/jazz/funky-jazz.jpg', '2:28'),
           MySong('Home Town', 'assets/songs/jazz/hometown-small.jpg', 'assets/songs/jazz/hometown.jpg', '5:26'),
-          MySong('tropical rain forest', 'assets/music.png', 'assets/fancy-playing.jpg', '3:43:12'),
+          MySong('rain compliation', 'assets/songs/rain/rain3-small.jpg', 'assets/songs/rain/rain3-large.jpg', '3:43:12'),
         ]
       )
     );
