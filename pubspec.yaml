@@ -56,6 +56,12 @@ flutter:
     - assets/songs/jazz/new-york-jazz.jpg
     - assets/songs/jazz/smooth-jazz-small.jpg
     - assets/songs/jazz/smooth-jazz.jpg
+    - assets/songs/rain/rain1-large.jpg
+    - assets/songs/rain/rain1-small.jpg
+    - assets/songs/rain/rain2-large.jpg
+    - assets/songs/rain/rain2-small.jpg
+    - assets/songs/rain/rain3-large.jpg
+    - assets/songs/rain/rain3-small.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
