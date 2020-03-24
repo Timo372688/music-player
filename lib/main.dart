@@ -53,12 +53,12 @@ class MyHomePage extends StatelessWidget {
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.fromLTRB(20.0, 30.0, 5.0, 0.0),
-                child: MyCollection('Rain', 'assets/rain-drops.jpg'),
+                child: MyCollection('Rain', 'assets/rain-drops.jpg', [MySong('Rain comp. 1', 'assets/songs/rain/rain1-small.jpg', 'assets/songs/rain/rain1-large.jpg', '51:13'), MySong('Rain comp. 2', 'assets/songs/rain/rain2-small.jpg', 'assets/songs/rain/rain2-large.jpg', '51:13'), MySong('Rain comp. 3', 'assets/songs/rain/rain3-small.jpg', 'assets/songs/rain/rain3-large.jpg', '51:13')]),
               ),
 
               Padding(
                 padding: const EdgeInsets.fromLTRB(10.0, 30.0, 5.0, 0.0),
-                child: MyCollection('Jazz', 'assets/coffee.jpg'),
+                child: MyCollection('Jazz', 'assets/coffee.jpg', [MySong('New York Jazz', 'assets/songs/jazz/new-york-jazz-small.jpg', 'assets/songs/jazz/new-york-jazz.jpg', '49:50'), MySong('Funky Jazz', 'assets/songs/jazz/funky-jazz-small.jpg', 'assets/songs/jazz/funky-jazz.jpg', '2:28'), MySong('Home Town', 'assets/songs/jazz/hometown-small.jpg', 'assets/songs/jazz/hometown.jpg', '5:26')]),
               ),
             ],
           ),
@@ -67,12 +67,12 @@ class MyHomePage extends StatelessWidget {
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.fromLTRB(20.0, 20.0, 5.0, 0.0),
-                child: MyCollection('blaa', 'assets/tulip.jpg'),
+                child: MyCollection('Games & Movies', 'assets/tulip.jpg', [MySong('Ori and the Whisps', 'assets/songs/movies/ori-small.jpg', 'assets/songs/movies/ori.jpg', '51:13'), MySong('Ori and the Whisps', 'assets/songs/movies/ori-small.jpg', 'assets/songs/movies/ori.jpg', '51:13')]),
               ),
 
               Padding(
                 padding: const EdgeInsets.fromLTRB(10.0, 20.0, 5.0, 0.0),
-                child: MyCollection('Wave sounds', 'assets/waves.jpg'),
+                child: MyCollection('Waves', 'assets/waves.jpg', [MySong('Ori and the Whisps', 'assets/songs/movies/ori-small.jpg', 'assets/songs/movies/ori.jpg', '51:13'), MySong('Ori and the Whisps', 'assets/songs/movies/ori-small.jpg', 'assets/songs/movies/ori.jpg', '51:13')]),
               ),
             ],
           ),
@@ -105,7 +105,9 @@ class MyHomePage extends StatelessWidget {
 class MyCollection extends StatelessWidget {
   final title;
   final image;
-  MyCollection(this.title, this.image);
+  final List<Widget> l;
+
+  MyCollection(this.title, this.image, this.l);
 
   @override
   Widget build(BuildContext context) {
@@ -114,7 +116,7 @@ class MyCollection extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => CollectionScreen(title, image)
+            builder: (context) => CollectionScreen(title, image, l)
           )
         );
       },
