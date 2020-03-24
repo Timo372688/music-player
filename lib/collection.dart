@@ -7,8 +7,9 @@ var lightBlueColor = Color(0xFF00CCFF);
 class CollectionScreen extends StatelessWidget {
   final title;
   final image;
-
-  CollectionScreen(this.title, this.image);
+  final List<Widget> l;
+  
+  CollectionScreen(this.title, this.image, this.l);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,18 +49,7 @@ class CollectionScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.fromLTRB(25.0, 15.0, 0.0, 0.0),
             child: Column(
-              children: <Widget>[
-                MySong('jazz playlist one', 'assets/music.png', '1:26:30'),
-                MySong('tropical rain forest', 'assets/music.png', '3:43:12'),
-                MySong('jazz playlist one', 'assets/music.png', '1:26:30'),
-                MySong('tropical rain forest', 'assets/music.png', '3:43:12'),
-                MySong('jazz playlist one', 'assets/music.png', '1:26:30'),
-                MySong('tropical rain forest', 'assets/music.png', '3:43:12'),
-                MySong('jazz playlist one', 'assets/music.png', '1:26:30'),
-                MySong('tropical rain forest', 'assets/music.png', '3:43:12'),
-                MySong('jazz playlist one', 'assets/music.png', '1:26:30'),
-                MySong('tropical rain forest', 'assets/music.png', '3:43:12'),
-              ],
+              children: l,
             ),
           )
         ],
